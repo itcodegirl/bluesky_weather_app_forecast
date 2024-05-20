@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <img class="logo" src="image/logo.svg" />
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search 🔎" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="toggle">
+          <label class="unit-switch">
+            <span class="unit-text">°C</span>
+            <input type="checkbox" name="unitsCheckbox" id="unitToggle" />
+            <span class="toggle-button"></span>
+            <span class="unit-text">°F</span>
+          </label>
+        </div>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="city">Find Your City's Weather</h1>
+            <p class="current-details">
+              <span id="current-date"> </span>
+              <span id="status"> </span> <br />
+              <strong id="humidity"> </strong>
+              <strong id="wind-speed"> </strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <div id="current-temperature-icon"></div>
+            <span id="current-temperature-value"> </span
+            ><span id="current-temperature-unit"> </span>
+          </div>
+        </div>
+        <h2 class="weatherForecast">🔮Week ahead</h2>
+        <div id="forecast"></div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/itcodegirl" target="_blank"
+            >Jenna Zawaski</a
+          >
+          and is
+          <a
+            href="https://github.com/itcodegirl/bluesky_weather_app"
+            target="_blank"
+            >hosted on GitHub</a
+          >
+          and
+          <a href="https://www.netlify.app" target="_blank">hosted on Netify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
