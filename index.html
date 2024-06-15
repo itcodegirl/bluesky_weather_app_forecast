@@ -18,15 +18,18 @@
       <header>
         <!-- <img class="logo" src="image/logo.svg" /> -->
         <form id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city..."
-            required
-            class="search-form-input"
-            id="search-form-input"
-          />
-          <input type="submit" value="Search 🔎" class="search-form-button" />
-        </form>
+        <label form="city-input"></label>
+        <input
+          type="text"
+          placeholder="Enter city name"
+          autocomplete="off"
+          autofocus
+          class="search-bar"
+          id="city-input"
+        />
+        <input type="submit" value="Get Weather 🔎" id="search-button" />
+      </form>
+        <h2 id="city-display"></h2>
       </header>
 
       <main>
