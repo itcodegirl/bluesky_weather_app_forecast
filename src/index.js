@@ -14,3 +14,16 @@ function searchButton(event) {
 document.addEventListener("DOMContentLoaded", function () {
 	document.querySelector("#search-form").addEventListener("submit", searchButton);
 });
+
+// Function to display the date and time
+function updateDateTime() {
+	const now = new Date();
+	document.querySelector("#current-date").textContent = now.toLocaleString();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+	setInterval(updateDateTime, 1000);
+});
+
+
+
