@@ -22,38 +22,46 @@
             type="search"
             placeholder="Enter a city..."
             required
-            class="search-input"
-            id="search-input"
+            class="search-form-input"
+            id="search-form-input"
           />
-          <input type="submit" value="Search 🔎" class="search-button" />
+          <input type="submit" value="Search 🔎" class="search-form-button" />
         </form>
       </header>
+
       <main>
-        <div class="toggle">
-          <label class="unit-switch">
-            <span class="unit-text">°C</span>
-            <input type="checkbox" name="unitsCheckbox" id="unitToggle" />
-            <span class="toggle-button"></span>
-            <span class="unit-text">°F</span>
-          </label>
-        </div>
-        <div class="current-weather">
+        <div class="weather-app-data">
           <div>
-            <h1 class="current-city" id="city">Find Your City's Weather</h1>
-            <p class="current-details">
+            <h1 class="current-city" id="current-city">
+              Find Your City's Weather
+            </h1>
+            <div>
               <span id="current-date"> </span>
-              <span id="status"> </span> <br />
+            </div>
+            <div>
+              <span id="current-time"> </span>
+            </div>
+            <div>
+              <span id="current-weather-description"> </span>
+            </div>
+
+            <p class="forecast-details">
+              <strong id="precipitation"> </strong>
               <strong id="humidity"> </strong>
-              <strong id="wind-speed"> </strong>
+              <strong id="wind"> </strong>
+              <strong id="high-temp"> </strong>
+              <strong id="low-temp"> </strong>
+              <strong id="sunrise"> </strong>
+              <strong id="sunset"> </strong>
             </p>
           </div>
+
           <div class="current-temperature">
             <div id="current-temperature-icon"></div>
             <span id="current-temperature-value"> </span
             ><span id="current-temperature-unit"> </span>
           </div>
         </div>
-        <h2 class="weatherForecast">🔮Week ahead</h2>
         <div id="forecast"></div>
       </main>
       <footer>
